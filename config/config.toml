@@ -1,0 +1,23 @@
+
+# 域名
+domain = "https://golangclub.com/"
+name = "Go语言俱乐部"
+
+# 定义 HTTP 监听端口
+[http]
+host = ""
+port = 2019
+
+# 存储配置
+[storage]
+driver = "mysql"
+user = "root"
+password = ""
+host = "localhost"
+port = 3306
+dbname = "golangclub"
+charset = "utf8mb4"
+
+[seo]
+keywords = "go.dev golangclub"
+description = "索引"

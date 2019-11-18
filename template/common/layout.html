@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Go is an open source programming language that makes it easy to build simple, reliable, and efficient software.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#00add8">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Google+Sans:400,500,600|Roboto:400,700|Source+Code+Pro|Material+Icons">
+    <link rel="stylesheet" href="/static/css/base.css">
+    <title>go.dev</title>
+</head>
+<body class="Site">
+<header class="Site-header">
+    <div class="Header Header--dark">
+        <nav class="Header-nav">
+            <a href="/">
+                <img class="Header-logo" src="/static/imgs/go-logo-white.svg" alt="Go">
+            </a>
+            <form class="SearchForm SearchForm--white" action="https://pkg.go.dev/search" role="search">
+                <input class="SearchForm-input SearchForm-input--white" aria-label="Search for a package" type="text" name="q" size="1"
+                       placeholder="Search for a package" autocapitalize="off" autocomplete="off" autocorrect="off"
+                       spellcheck="false" title="Search for a package">
+                <button class="SearchForm-submit" aria-label="Search for a package">
+                    <svg class="SearchForm-submitIcon SearchForm-submitIcon--white" focusable="false" viewBox="0 0 24 24" aria-hidden="true"
+                         role="presentation">
+                        <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path>
+                        <path fill="none" d="M0 0h24v24H0z"></path>
+                    </svg>
+                </button>
+            </form>
+            <ul class="Header-menu">
+                <li class="Header-menuItem ">
+                    <a href="https://go.dev/solutions" title="Solutions">Solutions</a>
+                </li>
+                <li class="Header-menuItem ">
+                    <a href="https://learn.go.dev" title="Learn">Learn</a>
+                </li>
+                <li class="Header-menuItem ">
+                    <a href="https://pkg.go.dev" title="Explore">Explore</a>
+                </li>
+                <li class="Header-menuItem ">
+                    <a href="https://go.dev/about" title="">About</a>
+                </li>
+                <li class="Header-menuItem ">
+                    <a href="https://golang.org" title="golang.org">golang.org</a>
+                </li>
+            </ul>
+            <button class="Header-navOpen js-headerMenuButton Header-navOpen--white" aria-label="Open navigation.">
+            </button>
+        </nav>
+    </div>
+</header>
+<aside class="NavigationDrawer js-header">
+    <nav class="NavigationDrawer-nav">
+        <div class="NavigationDrawer-header">
+            <a href="https://go.dev/">
+                <img class="NavigationDrawer-logo" src="/static/imgs/go-logo-blue.svg" alt="Go.">
+            </a>
+            <button class="NavigationDrawer-close js-headerMenuButton" aria-label="Close navigation.">
+            </button>
+        </div>
+        <ul class="NavigationDrawer-list">
+            <li class="NavigationDrawer-listItem ">
+                <a href="https://go.dev/solutions" title="Solutions">Solutions</a>
+            </li>
+            <li class="NavigationDrawer-listItem ">
+                <a href="https://learn.go.dev" title="Learn">Learn</a>
+            </li>
+            <li class="NavigationDrawer-listItem ">
+                <a href="https://pkg.go.dev" title="Explore">Explore</a>
+            </li>
+            <li class="NavigationDrawer-listItem ">
+                <a href="https://go.dev/about" title="">About</a>
+            </li>
+            <li class="NavigationDrawer-listItem ">
+                <a href="https://golang.org" title="golang.org">golang.org</a>
+            </li>
+        </ul>
+    </nav>
+</aside>
+<div class="NavigationDrawer-scrim js-scrim" role="presentation">
+</div>
+
+<main class="Site-content">
+   {{template "content" .}}
+</main>
+
+<footer class="Site-footer">
+    <div class="Footer">
+        <div class="Container">
+            <div class="Footer-links">
+                <div class="Footer-linkColumn">
+
+                    <a href="https://go.dev/solutions" class="Footer-link Footer-link--primary" title="Solutions" data-identifier="solutions">
+                        Solutions
+                    </a>
+
+
+                    <a href="https://go.dev/solutions" class="Footer-link" title="Use Cases" data-identifier="usecases">
+                        Use Cases
+                    </a>
+
+
+
+                    <a href="https://go.dev/solutions" class="Footer-link" title="Case Studies" data-identifier="casestudies">
+                        Case Studies
+                    </a>
+
+
+                </div>
+                <div class="Footer-linkColumn">
+
+                    <a href="https://go.dev/learn" class="Footer-link Footer-link--primary" title="Learn" data-identifier="learn">
+                        Learn
+                    </a>
+
+
+                    <a href="https://play.golang.org" class="Footer-link" title="" data-identifier="">
+                        Playground
+                    </a>
+
+
+
+                    <a href="https://tour.golang.org" class="Footer-link" title="" data-identifier="">
+                        Tour
+                    </a>
+
+
+
+                    <a href="https://stackoverflow.com/questions/tagged/go?tab=Newest" class="Footer-link" title="" data-identifier="">
+                        Stack Overflow
+                    </a>
+
+
+                </div>
+                <div class="Footer-linkColumn">
+
+                    <a href="https://pkg.go.dev" class="Footer-link Footer-link--primary" title="Explore" data-identifier="explore">
+                        Explore
+                    </a>
+
+                </div>
+                <div class="Footer-linkColumn">
+
+                    <a href="https://go.dev/about" class="Footer-link Footer-link--primary" title="About" data-identifier="about">
+                        About
+                    </a>
+
+
+                    <a href="https://golang.org/dl/" class="Footer-link" title="" data-identifier="">
+                        Download
+                    </a>
+
+
+
+                    <a href="https://blog.golang.org" class="Footer-link" title="" data-identifier="">
+                        Blog
+                    </a>
+
+
+
+                    <a href="https://github.com/golang/go/issues" class="Footer-link" title="" data-identifier="">
+                        Issue Tracker
+                    </a>
+
+
+
+                    <a href="https://golang.org/doc/devel/release.html" class="Footer-link" title="" data-identifier="">
+                        Release Notes
+                    </a>
+
+
+
+                    <a href="https://blog.golang.org/go-brand" class="Footer-link" title="" data-identifier="">
+                        Brand Guidelines
+                    </a>
+
+
+
+                    <a href="https://golang.org/conduct" class="Footer-link" title="" data-identifier="">
+                        Code of Conduct
+                    </a>
+
+
+                </div>
+                <div class="Footer-linkColumn">
+
+                    <a href="https://www.twitter.com/golang" class="Footer-link Footer-link--primary" title="Connect" data-identifier="connect">
+                        Connect
+                    </a>
+
+
+                    <a href="https://www.twitter.com/golang" class="Footer-link" title="" data-identifier="">
+                        Twitter
+                    </a>
+
+
+
+                    <a href="https://github.com/golang" class="Footer-link" title="" data-identifier="">
+                        Github
+                    </a>
+
+
+
+                    <a href="https://invite.slack.golangbridge.org/" class="Footer-link" title="" data-identifier="">
+                        Slack
+                    </a>
+
+
+
+                    <a href="https://reddit.com/r/golang" class="Footer-link" title="" data-identifier="">
+                        r/golang
+                    </a>
+
+
+
+                    <a href="https://www.meetup.com/pro/go" class="Footer-link" title="" data-identifier="">
+                        Meetup
+                    </a>
+
+
+
+                    <a href="https://golangweekly.com/" class="Footer-link" title="" data-identifier="">
+                        Golang Weekly
+                    </a>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="Footer">
+        <div class="Container Container--fullBleed">
+            <div class="Footer-bottom">
+                <img class="Footer-gopher" src="/static/imgs/pilot-bust.svg" alt="The Go Gopher">
+                <ul class="Footer-listRow">
+                    <li class="Footer-listItem"><a href="/copyright">Copyright</a></li>
+                    <li class="Footer-listItem"><a href="/tos">Terms of Service</a></li>
+                    <li class="Footer-listItem"><a href="http://www.google.com/intl/en/policies/privacy/" target="_blank">Privacy Policy</a></li>
+                    <li class="Footer-listItem">
+                        <button class="js-feedbackButton Footer-feedbackButton">
+                            Report an Issue
+                        </button>
+                    </li>
+                    <li class="Footer-listItem">
+                        <button class="js-feedbackButton Footer-feedbackButton">
+                            Share Feedback
+                        </button>
+                    </li>
+                </ul>
+                <a class="Footer-googleLogo" target="_blank" href="https://google.com" rel="noopener noreferrer">
+                    <img class="Footer-googleLogoImg" src="/images/google-white.png" alt="Google logo">
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
