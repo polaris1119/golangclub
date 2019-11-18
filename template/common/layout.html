@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <title>{{template "title" .}}</title>
     <meta charset="utf-8">
-    <meta name="description" content="Go is an open source programming language that makes it easy to build simple, reliable, and efficient software.">
+    {{template "seo" .}}
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#00add8">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Google+Sans:400,500,600|Roboto:400,700|Source+Code+Pro|Material+Icons">
     <link rel="stylesheet" href="/static/css/base.css">
-    <title>go.dev</title>
 </head>
+
 <body class="Site">
 <header class="Site-header">
     <div class="Header Header--dark">
@@ -30,19 +31,22 @@
             </form>
             <ul class="Header-menu">
                 <li class="Header-menuItem ">
-                    <a href="https://go.dev/solutions" title="Solutions">解决方案</a>
+                    <a href="/solutions" title="Solutions">解决方案</a>
                 </li>
                 <li class="Header-menuItem ">
-                    <a href="https://learn.go.dev" title="Learn">学习</a>
+                    <a href="/learn" title="Learn">学习资源</a>
                 </li>
                 <li class="Header-menuItem ">
-                    <a href="https://pkg.go.dev" title="Explore">探索</a>
+                    <a href="https://pkg.go.dev" target="_blank" title="Explore">探索</a>
                 </li>
                 <li class="Header-menuItem ">
-                    <a href="https://go.dev/about" title="">关于</a>
+                    <a href="/gopher" title="Gopher名人">Gopher名人</a>
                 </li>
                 <li class="Header-menuItem ">
-                    <a href="https://golang.org" title="golang.org">Golang 官网</a>
+                    <a href="/about" title="about">关于</a>
+                </li>
+                <li class="Header-menuItem ">
+                    <a href="https://studygolang.com" target="_blank" title="studygolang.com">Go语言中文网</a>
                 </li>
             </ul>
             <button class="Header-navOpen js-headerMenuButton Header-navOpen--white" aria-label="Open navigation.">

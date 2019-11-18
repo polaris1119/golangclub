@@ -36,8 +36,8 @@ func Init() {
 		// 配置文件名称
 		viper.SetConfigName(*config)
 		// 配置文件查找路径
-		viper.AddConfigPath("/etc/jianshu/")
-		viper.AddConfigPath("$HOME/.jianshu")
+		viper.AddConfigPath("/etc/golangclub/")
+		viper.AddConfigPath("$HOME/.golangclub")
 		viper.AddConfigPath(App.RootDir + "/config")
 		// 读取配置文件
 		err := viper.ReadInConfig()
