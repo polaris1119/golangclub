@@ -14,7 +14,7 @@ import (
 	. "github.com/polaris1119/golangclub/http"
 )
 
-type IndexController struct {}
+type IndexController struct{}
 
 func (i IndexController) RegisterRoutes(e *echo.Echo) {
 	e.GET("/", i.index)
