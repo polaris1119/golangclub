@@ -125,13 +125,13 @@ a.Footer-link--primary {
     cursor: pointer;
     text-decoration: underline;
 }
-.Footer-googleLogo {
+.Footer-sgLogo {
     align-self: flex-end;
     height: 1.5rem;
     margin-bottom: 1.3rem;
     text-align: right;
 }
-.Footer-googleLogoImg {
+.Footer-sgLogoImg {
     height: 1.5rem;
 }
 .Container--fullBleed {
@@ -231,14 +231,14 @@ h6 {
     color: #3e4042;
 }
 .Header-navOpen {
-    background: no-repeat center/2rem url('/images/menu-24px.svg');
+    background: no-repeat center/2rem url('/static/imgs/menu-24px.svg');
     border: none;
     height: 2.5rem;
     margin: auto 1rem;
     width: 2.5rem;
 }
 .Header-navOpen--white {
-    background: no-repeat center/2rem url('/images/menu-24px-white.svg');
+    background: no-repeat center/2rem url('/static/imgs/menu-24px-white.svg');
 }
 .NavigationDrawer {
     background: #fff;
@@ -266,7 +266,7 @@ h6 {
     width: 5.125rem;
 }
 .NavigationDrawer-close {
-    background: no-repeat center/2rem url('/images/close-24px.svg');
+    background: no-repeat center/2rem url('/static/imgs/close-24px.svg');
     border: none;
     height: 2.5rem;
     margin: auto 1rem;
