@@ -21,7 +21,7 @@ func (r RepoController) pull(ctx echo.Context) error {
 	secret := "L072uFhwQ6"
 	_ = secret
 
-	strCmd := `cd `+global.App.RootDir + `; git pull`
+	strCmd := `cd ` + global.App.RootDir + `; git pull`
 	cmd := exec.Command(strCmd)
 	var out bytes.Buffer
 	cmd.Stdout = &out
