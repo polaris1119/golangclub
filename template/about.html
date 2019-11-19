@@ -1,0 +1,43 @@
+{{define "title"}}关于 — Go语言俱乐部{{end}}
+{{define "content"}}
+<article class="Article ">
+    <h1>About</h1>
+
+
+    <p><a href="https://go.dev" rel="noreferrer" target="_blank">Go.dev</a> is a companion website to <a href="https://golang.org" rel="noreferrer" target="_blank">golang.org</a>. <a href="https://golang.org" rel="noreferrer" target="_blank">Golang.org</a> is the home of the open source project and distribution, while <a href="https://go.dev" rel="noreferrer" target="_blank">go.dev</a> is the hub for Go users providing centralized and curated resources from across the Go ecosystem.</p>
+
+    <p><img class="LargeMedia-image Right" alt="Go gopher" src="/images/gophers/pink.svg">
+        Go.dev provides:</p>
+
+    <ol>
+        <li>Centralized information for Go packages and modules published on index.golang.org.</li>
+        <li>Essential learning resources</li>
+        <li>Critical use cases &amp; case studies</li>
+    </ol>
+
+    <p>Go.dev is currently in <a href="https://en.wikipedia.org/wiki/Minimum_viable_product" rel="noreferrer" target="_blank">MVP</a> status. We&rsquo;re proud of what we&rsquo;ve built and excited to share it with the community. We hope you find value and joy in using go.dev. Go.dev only has a small portion of features we intend to build, and we are actively seeking feedback. If you have any ideas, suggestions or issues, please let us know.</p>
+
+    <h2 id="sharing-feedback-reporting-an-issue">Sharing feedback / Reporting an issue</h2>
+
+    <p>On the footer of every page there are two links, &ldquo;Share Feedback&rdquo; and &ldquo;Report an issue&rdquo;. These links will enable you to capture a screenshot of the page you are on, annotate that screenshot, and then send this directly to the go.dev team.</p>
+
+    <p>Or you can send your bugs, ideas, feature requests and questions to <a href="mailto:go-discovery-feedback@google.com" rel="noreferrer" target="_blank">go-discovery-feedback@google.com</a>.</p>
+
+    <h2 id="adding-a-package">Adding a package</h2>
+
+    <p>To add a package or module, simply fetch it from proxy.golang.org. Documentation is generated based on Go source code downloaded from the proxy.golang.org/&lt;module&gt;@&lt;version&gt;.zip. New module versions are fetched from index.golang.org and added to the go.dev site every few minutes.</p>
+
+    <p>The <a href="https://blog.golang.org/godoc-documenting-go-code" rel="noreferrer" target="_blank">guidelines</a> for writing documentation for the <a href="https://pkg.go.dev/golang.org/x/tools/cmd/godoc" rel="noreferrer" target="_blank">godoc</a> tool apply to go.dev.</p>
+
+    <p>It&rsquo;s important to write a good summary of the package in the first sentence of the package comment. The go.dev site indexes the first sentence and displays it in search results.</p>
+
+    <h2 id="removing-a-package">Removing a package</h2>
+
+    <p>If you would like a package removed, please send an email to <a href="mailto:go-discovery-feedback@google.com" rel="noreferrer" target="_blank">go-discovery-feedback@google.com</a>, with the import path or module path that you want to remove.</p>
+
+    <h2 id="license-policy">License policy</h2>
+
+    <p>Information for a given package or module may be limited if we are not able to detect a suitable license. See our <a href="https://pkg.go.dev/license-policy" rel="noreferrer" target="_blank">license policy</a> for more information.</p>
+
+</article>
+{{end}}
