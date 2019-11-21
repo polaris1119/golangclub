@@ -1,0 +1,302 @@
+{{define "title"}}Go Web 开发 - golangclub.com{{end}}
+{{define "content"}}
+<main class="Site-content">
+	<article class="Article Article--solutions">
+		<h1>Go Web 开发</h1>
+		<h2 id="go-delivers-speed-security-and-developer-friendly-tools-for-web-applications"> Go 为 Web 应用程序提供了高性能，安全,
+			以及对开发人员友好的工具集</h2>
+
+		<p> Go 旨在使开发人员能够快速开发可扩展的、安全的 Web 应用程序。Go 标准库看自带易用的、安全的、性能好、鲁棒的 Web 服务器，以及 Web 模板库。Go 完美支持了所有的新技术， 比如：<a
+				href="https://pkg.golangclub.com/net/http" rel="noreferrer" target="_blank">HTTP/2</a>，各种流行的数据库，包括<a
+				href="https://pkg.golangclub.com/mod/github.com/go-sql-driver/mysql" rel="noreferrer" target="_blank">MySQL</a>、
+			<a href="https://pkg.golangclub.com/mod/go.mongodb.org/mongo-driver" rel="noreferrer" target="_blank">MongoDB</a>、
+			<a href="https://pkg.golangclub.com/mod/github.com/elastic/go-elasticsearch/v7" rel="noreferrer"
+				target="_blank">ElasticSearch</a>，最新的加密技术，如<a href="https://pkg.golangclub.com/crypto/tls" rel="noreferrer"
+				target="_blank"> TLS 1.3</a> 等等。由于 Go 具有极好的可移植性，所以 Go Web 应用程序可以运行在任何的环境、云、操作系统上</p>
+
+		<p><img class="LargeMedia-image Right" alt="Go gopher" src="/static/imgs/gophers/front.svg">
+			对于企业来说，Go 是快速跨平台部署的首选。凭借其 Goroutine、本地编译以及基于 URI 的 Package 命名空间，使 Go 代码能够快速编译为单个的、非常小的二进制文件（具有零依赖性）</p>
+
+		<p>来自 QArea 市场经理<a href="https://dzone.com/articles/golang-web-development-better-than-python" rel="noreferrer"
+				target="_blank"> Andrew
+				Smith </a>写道：“如果你正在为网络编程，移动开发，微服务，ERP 系统寻找强力的工具，根据很多真实的 case 证明，进行相同类型的任务开发，使用 Go 进行 Web 开发比 Python 要快很多”</p>
+
+		<div class="PullQuote">
+			<div class="PullQuote-quoteHeader">
+				<img class="PullQuote-image" src="/static/imgs/quote.svg" alt="Quotation mark.">
+			</div>
+			<p class="PullQuote-body">
+				Go 语言是我见过的和使用过的最简单的语言，对我来说，Go 比 JavaScript 更易于学习
+			</p>
+			<div class="PullQuote-author">
+				<a href="https://hackernoon.com/5-reasons-why-we-switched-from-python-to-go-4414d5f42690"
+					target="_blank">&mdash; Hexact Inc 联合创始人&CTO Tigran Bayburtsyan</a></div>
+		</div>
+
+		<p>Bayburtsyan 总结了他的公司改用 Go 的五个关键原因:</p>
+		<ol>
+			<li>
+				<p><strong>编译成单个二进制文件</strong> — “根据操作系统类型和体系结构的不同，Go 会使用静态链接将所有依赖项库和模块组合到一个二进制文件中”</p>
+			</li>
+
+			<li>
+				<p><strong>静态类型</strong> — “对大规模应用来说，类型系统真的很重要”
+				</p>
+			</li>
+
+			<li>
+				<p><strong>性能</strong> — “Go 性能这么好的原因是由于其并发模型以及CPU可扩展性。当我们需要处理很多内部请求时，相比于 Python 的线程，Goroutines 在资源使用上会少 10 倍以上”</p>
+			</li>
+
+			<li>
+				<p><strong>不再需要 Web 框架</strong> — “实际上在大多数情况下，我们不再需要任何第三方库”</p>
+			</li>
+
+			<li>
+				<p><strong>强大的 IDE 支持和调试</strong> — “在我们的项目用 Go 重写后，我们的代码量比以前减少了 64% ”</p>
+			</li>
+		</ol>
+
+		<h2 id="featured-go-users-projects"> Go 明星用户和项目</h2>
+
+		<ul class="MediaList">
+
+			<li class="MediaList-itemBox">
+				<div class="MediaList-itemBoxHeader-top">
+					<a href="https://www.didiglobal.com/" target="_blank"><img class="MediaList-itemBoxImage"
+							src="/static/imgs/logos/didi.svg" alt="Hugo Logo"></a>
+					<p class="MediaList-itemBoxTitle"></p>
+				</div>
+				<p class="MediaList-itemBoxBody-top"><a href="https://www.didiglobal.com/" rel="noreferrer"
+						target="_blank">滴滴 </a>是国内应用 Go 较早的公司，是国内 Gopher 聚居区，使用 Go 开发了大量线上项目，包括在线业务系统，分单系统，Proxy系统，监控系统等等</p>
+			</li>
+
+			<li class="MediaList-itemBox">
+				<div class="MediaList-itemBoxHeader-top">
+					<a href="https://www.toutiao.com/" target="_blank"><img class="MediaList-itemBoxImage"
+							src="/static/imgs/logos/jrtt.png" alt="Hugo Logo"></a>
+					<p class="MediaList-itemBoxTitle"></p>
+				</div>
+				<p class="MediaList-itemBoxBody-top"><a href="https://www.toutiao.com/" rel="noreferrer"
+						target="_blank">今日头条 </a>当前后端服务超过80%的流量是跑在 Go 构建的服务上。微服务数量超过100个，高峰 QPS 超过700万，日处理请求量超过3000亿，是业内最大规模的 Go 应用</p>
+			</li>
+
+			<li class="MediaList-itemBox">
+				<div class="MediaList-itemBoxHeader-top">
+					<a href="https://pingcap.com/index.html" target="_blank"><img class="MediaList-itemBoxImage"
+							src="/static/imgs/logos/tidb.png" alt="Medium Logo"></a>
+					<p class="MediaList-itemBoxTitle"></p>
+				</div>
+				<p class="MediaList-itemBoxBody-top"><a href="https://pingcap.com/index.html" rel="noreferrer"
+					target="_blank">TiDB</a> 是 PingCAP 公司设计的开源分布式 HTAP 数据库，主要使用 Go 开发，结合了传统的 RDBMS 和 NoSQL 的最佳特性。TiDB 兼容 MySQL，支持无限的水平扩展，具备强一致性和高可用性</p>
+			</li>
+
+			<li class="MediaList-itemBox">
+				<div class="MediaList-itemBoxHeader-top">
+					<a href="https://etcd.io" target="_blank"><img class="MediaList-itemBoxImage"
+							src="/static/imgs/logos/etcd.png" alt="Hugo Logo"></a>
+					<p class="MediaList-itemBoxTitle"></p>
+				</div>
+				<p class="MediaList-itemBoxBody-top"><a href="https://etcd.io" rel="noreferrer"
+						target="_blank">Etcd</a> 是 CoreOS 团队于2013年6月发起的开源项目，它的目标是构建一个高可用的分布式键值（key-value）数据库。Etcd 内部采用 Raft 协议作为一致性算法。基于 Go 语言实现</p>
+			</li>
+
+			<li class="MediaList-itemBox">
+				<div class="MediaList-itemBoxHeader-top">
+					<a href="https://caddyserver.com" target="_blank"><img class="MediaList-itemBoxImage"
+							src="/static/imgs/logos/caddy.jpeg" alt="Caddy Logo"></a>
+					<p class="MediaList-itemBoxTitle"></p>
+				</div>
+				<p class="MediaList-itemBoxBody-top"><a href="https://caddyserver.com" rel="noreferrer"
+						target="_blank">Caddy 2</a> 是用 Go 语言编写的，一款功能强大的，企业级的开源 Web 服务器，并自带 Automatic HTTPS。与使用 C 语言编写的服务器相比，Caddy 提供的内存安全性更高。Go 标准库提供的 Hardened TLS 栈能够处理很大一部分的互联网流量</p>
+			</li>
+
+			
+
+			<li class="MediaList-itemBox">
+				<div class="MediaList-itemBoxHeader-top">
+					<a href="https://prometheus.io/" target="_blank"><img class="MediaList-itemBoxImage"
+							src="/static/imgs/logos/prometheus.png" alt="Caddy Logo"></a>
+					<p class="MediaList-itemBoxTitle"></p>
+				</div>
+				<p class="MediaList-itemBoxBody-top"><a href="https://prometheus.io/" rel="noreferrer"
+						target="_blank">Prometheus</a> 是一套开源的监控，报警，时间序列数据库的组合。2016年 Prometheus 加入了云计算基金会，成为 Kubernetes 之后的第二个托管项目。Prometheus 大多数组件都是用 Go 编写的</p>
+			</li>
+		</ul>
+
+		<h2 id="key-solutions">核心解决方案</h2>
+
+		<h3 id="go-books-on-web-development">Go web 开发书单</h3>
+
+		<ul class="Learn-tileList">
+
+			<li class="Learn-tile">
+				<a href="https://book.douban.com/subject/24316255/">
+					<div class="Learn-tileThumbnail Learn-tileThumbnail--book">
+
+						<img alt="Web Development with Go thumbnail." src="/static/imgs/books/goweb.jpg">
+
+					</div>
+					<p class="Learn-tileTitle">
+						Go Web编程
+					</p>
+				</a>
+			</li>
+
+			<li class="Learn-tile">
+				<a href="https://item.jd.com/12647494.html">
+					<div class="Learn-tileThumbnail Learn-tileThumbnail--book">
+
+						<img alt="Go Web Programming thumbnail." src="/static/imgs/books/caoda.jpg">
+
+					</div>
+					<p class="Learn-tileTitle">
+						Go语言高级编程
+					</p>
+				</a>
+			</li>
+
+			<li class="Learn-tile">
+				<a href="https://www.amazon.com/Web-Development-Cookbook-full-stack-applications-ebook/dp/B077TVQ28W">
+					<div class="Learn-tileThumbnail Learn-tileThumbnail--book">
+
+						<img alt="Web Development Cookbook: Build full-stack web applications with Go thumbnail."
+							src="/static/imgs/books/huangjh.jpg">
+
+					</div>
+					<p class="Learn-tileTitle">
+						Go Web编程
+					</p>
+				</a>
+			</li>
+
+			<li class="Learn-tile">
+				<a href="https://item.jd.com/40295927545.html">
+					<div class="Learn-tileThumbnail Learn-tileThumbnail--book">
+
+						<img src="/static/imgs/books/xuhen.jpg">
+
+					</div>
+					<p class="Learn-tileTitle">
+						Go语言学习笔记
+					</p>
+				</a>
+			</li>
+
+			<li class="Learn-tile">
+				<a href="https://book.douban.com/subject/24869910/">
+					<div class="Learn-tileThumbnail Learn-tileThumbnail--book">
+
+						<img src="/static/imgs/books/xsw.jpg">
+
+					</div>
+					<p class="Learn-tileTitle">
+						Go 语言程序设计
+					</p>
+				</a>
+			</li>
+:
+		</ul>
+
+		<div class="headerWithLink">
+			<h3>Web 框架</h2>
+				<p class="headerLink"><a href="https://pkg.golangclub.com/search?q=web&#43;framework">更多 &gt;</a></p>
+		</div>
+
+		<ul>
+			<li><a href="https://gin-gonic.com/" rel="noreferrer" target="_blank">Gin</a> 用 Go 编写的一个 Web 应用框架，对比其它主流的同类框架，他有更好的性能，更快的路由，超大规模的使用人群，丰富的中间件。相信我你会爱上 Gin，不解释</li>
+
+			<li><a href="https://echo.labstack.com" rel="noreferrer" target="_blank">Echo</a> 另外一个高性能，被大规模使用的 Go 框架。具有性能优秀的 Router，支持高扩展，对 XML、JSON 的完美解析，支持 HTTP/2 等等</li>
+
+			<li><a href="https://github.com/astaxie/beego" rel="noreferrer" target="_blank">Beego</a> 国产的明星级别的 Go 框架，是一个优秀的 MVC 框架 ，主要设计灵感来源于 Tornado、Sinatra 和 Flask 这三个框架</li>
+
+			<li><a href="https://github.com/henrylee2cn/faygo" rel="noreferrer" target="_blank">Faygo</a> 是一款快速、简洁的 Go Web 框架，可用极少的代码开发出高性能的 Web 应用程序（尤其是 API 接口）</li>
+
+			<li><a href="http://www.gorillatoolkit.org/" rel="noreferrer" target="_blank">Gorilla</a> ，一个 Go Web 编程工具包。这个工具包提供 Router、Dispatcher、Context、 RPC、Schema、Sessions、Webscoket等等</li>
+		</ul>
+
+		<div class="headerWithLink">
+			<h3>路由</h2>
+				<p class="headerLink"><a href="https://pkg.golangclub.com/search?q=http%20router">更多 &gt;</a></p>
+		</div>
+
+		<ul>
+			<li>
+				<a
+					href="https://pkg.golangclub.com/github.com/julienschmidt/httprouter?tab=overview">julienschmidt/httprouter</a> 
+					轻量级的，高性能的 HTTP 路由</li>
+			<li>
+				<a href="https://pkg.golangclub.com/github.com/gorilla/mux?tab=overview">gorilla/mux</a> 强力的 HTTP 路由，具有丰富的 URL 匹配机制</li>
+			<li>
+				<a href="https://pkg.golangclub.com/github.com/go-chi/chi?tab=overview">chi</a> 可以构建一个轻量的、可复用的、能组合的高性能 HTTP 服务</li>
+			<li><a href="：/net/http" rel="noreferrer" target="_blank">net/http</a> 标准库 HTTP 包</li>
+		</ul>
+
+		<div class="headerWithLink">
+			<h3>模板引擎</h2>
+				<p class="headerLink"><a href="https://pkg.golangclub.com/search?q=templates">更多 &gt;</a></p>
+		</div>
+
+		<ul>
+			<li><a href="https://pkg.golangclub.com/html/template" rel="noreferrer" target="_blank">html/template</a> 标准库 HTML 模板引擎</li>
+			<li>
+				<a href="https://pkg.golangclub.com/github.com/flosch/pongo2?tab=overview">flosch/pongo2</a> 类似于 Django 语法的模板语言</li>
+		</ul>
+
+		<div class="headerWithLink">
+			<h3>数据库 &amp; 驱动</h2>
+				<p class="headerLink"><a href="https://pkg.golangclub.com/search?q=database%20OR%20sql">更多 &gt;</a></p>
+		</div>
+
+		<ul>
+			<li><a href="https://pkg.golangclub.com/database/sql" rel="noreferrer" target="_blank">database/sql</a> 标准库，提供驱动接口，支持 <a
+				href="https://github.com/golang/go/wiki/SQLDrivers" rel="noreferrer" target="_blank"> 大部分常见的的 SQL 类型的数据库</a>， 如 MySQL，Postgres，Oracle，MS SQL，BigQuery</li>
+			<li>
+				<a href="https://pkg.golangclub.com/go.mongodb.org/mongo-driver/mongo?tab=overview">mongo-driver/mongo</a> 支持 MongoDB 的 Go 驱动程序</li>
+			<li>
+				<a href="https://pkg.golangclub.com/github.com/olivere/elastic?tab=overview">olivere/elastic</a> Go Elasticsearch 客户端</li>
+
+			<li><a href="https://gorm.io/" rel="noreferrer" target="_blank">GORM</a> Go ORM 库</li>
+
+			<li><a href="http://blevesearch.com/" rel="noreferrer" target="_blank">Bleve</a> 基于 Go 语言开发的索引、检索库</li>
+			
+			<li><a href="https://pingcap.com/index.html" rel="noreferrer" target="_blank">TIDB</a> 国内 PingCAP 团队开发的一个分布式 NewSQL 数据库
+			</li>
+		</ul>
+
+		<div class="headerWithLink">
+			<h3>中间件</h2>
+				<p class="headerLink"><a href="https://pkg.golangclub.com/search?q=web">更多 &gt;</a></p>
+		</div>
+
+		<ul>
+			<li>
+				<a href="https://pkg.golangclub.com/github.com/markbates/goth?tab=overview">markbates/goth</a> Web 应用的鉴权中间件</li>
+			<li>
+				<a href="https://pkg.golangclub.com/github.com/jinzhu/gorm?tab=overview">jinzhu/gorm</a> Go ORM 库
+			</li>
+			<li>
+				<a href="https://pkg.golangclub.com/github.com/dgrijalva/jwt-go?tab=overview">dgrijalva/jwt-go</a> JWT 的 Golang 实现</li>
+		</ul>
+
+		<h3 id="courses">课程</h3>
+
+		<ul>
+			<li><a href="https://www.usegolang.com" rel="noreferrer" target="_blank">Learn to Create Web Applications
+					using Go</a> 一个付费的在线课程</li>
+		</ul>
+
+		<h3 id="projects">项目</h3>
+
+		<ul>
+			<li>
+				<a href="https://pkg.golangclub.com/github.com/gopherjs/gopherjs?tab=overview">gopherjs</a> 一个编译器，将 Gopher 用 Go 编写代码轻松转换成 JS 前端代码，并且能够兼容所有的浏览器</li>
+			<li><a href="https://gohugo.io/" rel="noreferrer" target="_blank">Hugo</a> 世界上最快构建网站的框架</li>
+			<li><a href="https://mattermost.com/" rel="noreferrer" target="_blank">Mattermost</a> 一个灵活的、开源的、安全的团队协作平台</li>
+			<li><a href="https://caddyserver.com/" rel="noreferrer" target="_blank">Caddy</a> Go 语言编写的，一款功能强大的、企业级的开源 Web 服务器，并自带 Automatic HTTPS</li>
+		</ul>
+
+	</article>
+</main>
+
+{{end}}
