@@ -23,6 +23,7 @@ func (i IndexController) RegisterRoutes(e *echo.Echo) {
 	e.GET("/gopher", i.gopher)
 	e.GET("/about", i.about)
 	e.GET("/solutions/webdev/", i.webdev)
+	e.GET("/solutions/cloud/", i.cloud)
 }
 
 // index 首页
@@ -50,7 +51,12 @@ func (i IndexController) about(ctx echo.Context) error {
 	return Render(ctx, "about.html", map[string]interface{}{"about_active": "Header-menuItem--active"})
 }
 
-// solutions Go for Web Development
+// solutions Go for Web Development Web 开发
 func (i IndexController) webdev(ctx echo.Context) error {
 	return Render(ctx, "solutions/webdev.html", map[string]interface{}{"solution_active": "Header-menuItem--active"})
+}
+
+// solutions Go for Cloud & Network Services 云&网络服务
+func (i IndexController) cloud(ctx echo.Context) error {
+	return Render(ctx, "solutions/cloud.html", map[string]interface{}{"solution_active": "Header-menuItem--active"})
 }
