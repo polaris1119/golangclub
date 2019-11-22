@@ -18,6 +18,5 @@ tmp
 golangclub
 
 vendor
-go.sum
 .vscode
 .DS_Store
