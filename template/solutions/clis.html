@@ -1,0 +1,226 @@
+{{define "title"}}Go 写的命令行接口 (CLIs, Command-line Interfaces)— Go语言俱乐部{{end}}
+{{define "content"}}
+    <article class="Article ">
+        <h1>Go 写的命令行接口</h1>
+
+
+        <h2 id="cli-developers-prefer-go-for-portability-performance-and-ease-of-creation">因为 Go 的可移植性、卓越的性能以及易于创建的特性，开发者更偏爱使用 Go 来开发命令行接口。 </h2>
+
+        <p>CLIs（CLIs, Command-line Interfaces，命令行接口）与 GUIs（GUIs，graphical user interfaces，图形用户界面）不同，CLIs 是纯文本的。云计算和基础架构程序具有易于自动化和远程功能的特性，所以云计算和基础架构程序主要是基于 CLI 的。</p>
+
+        <div class="PullQuote">
+            <div class="PullQuote-quoteHeader">
+                <img class="PullQuote-image" src="/static/imgs/quote.svg" alt="Quotation mark.">
+            </div>
+            <p class="PullQuote-body">
+                优雅的设计让 Go 可以完美的适合多种应用风格，并且它能够很容易交叉编译成适合多平台的二进制，这让它具有很大的优势。”
+            </p>
+            <div class="PullQuote-author">
+                <a href="https://tutorialedge.net/golang/building-a-cli-in-go/" target="_blank">&mdash; — Elliot Forbes，摩根大通软件工程师 </a></div>
+        </div>
+
+        <p><img class="LargeMedia-image Right" alt="Go gopher" src="/static/imgs/gophers/happy.svg"></p>
+
+        <p>CLIs 开发者发现 Go 非常适合设计他们的应用程序。Go 项目能够很快地编译成一个单独的二进制文件，并且以一致的风格快平台工作，并且有一个强大的开发社区。 单单使用一台 Windows 电脑或者一台 Mac 笔记本电脑，开发者就能为几十种不同架构体系中的每一种架构构建一个 Go 应用程序，并且操作系统能在几秒钟内就能实现，不需要复杂的构建环境。其他任何编译语言都不可能如此迅速、也不可能具有如此的可移植性。Go 应用程序被构建成一个独立的二进制文件中，这使得 Go 应用程序安装变得非常简单。</p>
+
+        <p>更重要的是，<strong>用 Go 编写的程序可以在任何系统上运行，而不需要任何现有的库、运行时或依赖项 </strong>。 并且 <strong>Go 编写的程序有一个立即启动的时间</strong>—类似于 C 或 C++，但无法用其他编程语言获得。</p>
+
+        <div class="PullQuote">
+            <div class="PullQuote-quoteHeader">
+                <img class="PullQuote-image" src="/static/imgs/quote.svg" alt="Quotation mark.">
+            </div>
+            <p class="PullQuote-body">
+                CLIs 的最佳设计是使用可预测的、面向任务的命令，并且你想要使用 Go。
+            </p>
+            <div class="PullQuote-author">
+                <a href="https://www.youtube.com/watch?v=eMz0vni6PAw&amp;list=PL2ntRZ1ySWBdDyspRTNBIKES1Y-P__59_&amp;index=11&amp;t=0s" target="_blank">&mdash; — Carolyn Van Slyck，微软高级软件工程师。</a></div>
+        </div>
+
+        <h2 id="featured-go-users-and-projects">主要的 Go 使用者和项目</h2>
+
+        <ul class="MediaList">
+
+            <li class="MediaList-itemBox">
+                <div class="MediaList-itemBoxHeader-top">
+                    <a href="https://xfinity.com" target="_blank"><img class="MediaList-itemBoxImage" src="/static/imgs/logos/comcast.svg" alt="Comcast Logo"></a>
+                    <p class="MediaList-itemBoxTitle"></p>
+                </div>
+                <p class="MediaList-itemBoxBody-top">Comcast <a href="https://github.com/Comcast/pulsar-client-go/blob/master/cli/main.go" rel="noreferrer" target="_blank">使用 Go 开发 CLI 客户端，</a> 用于发布和订阅其高流量站点。 该公司还支持一个 <a href="https://github.com/Comcast/pulsar-client-go" rel="noreferrer" target="_blank">开源的客户端库</a> ，它是使用 Go 编写的 - 为 Apache Pulsar 设计的。</p>
+            </li>
+
+            <li class="MediaList-itemBox">
+                <div class="MediaList-itemBoxHeader-top">
+                    <a href="https://github.com" target="_blank"><img class="MediaList-itemBoxImage" src="/static/imgs/logos/github.svg" alt="GitHub Logo"></a>
+                    <p class="MediaList-itemBoxTitle"></p>
+                </div>
+                <p class="MediaList-itemBoxBody-top">GitHub <a href="https://github.com/github/hub" rel="noreferrer" target="_blank">使用 Go 开发命令行工具，</a> 这个可以让使用 GitHub 更容易， 封装 git ，以便使用额外的特性和命令对其进行扩展。</p>
+            </li>
+
+            <li class="MediaList-itemBox">
+                <div class="MediaList-itemBoxHeader-top">
+                    <a href="https://uber.com" target="_blank"><img class="MediaList-itemBoxImage" src="/static/imgs/logos/uber.svg" alt="Uber Logo"></a>
+                    <p class="MediaList-itemBoxTitle"></p>
+                </div>
+                <p class="MediaList-itemBoxBody-top">Uber 使用 Go 开发了一些 CLI 工具， 包括<a href="https://www.jaegertracing.io/docs/1.14/cli/" rel="noreferrer" target="_blank">Jaeger 的 CLI API</a>，一个用于监控微服务分布式系统的分布式跟踪系统。</p>
+            </li>
+
+            <li class="MediaList-itemBox">
+                <div class="MediaList-itemBoxHeader-top">
+                    <a href="https://stripe.com" target="_blank"><img class="MediaList-itemBoxImage" src="/static/imgs/logos/stripe.svg" alt="Stripe Logo"></a>
+                    <p class="MediaList-itemBoxTitle"></p>
+                </div>
+                <p class="MediaList-itemBoxBody-top">Stripe <a href="https://github.com/stripe/stripe-cli" rel="noreferrer" target="_blank">使用 Go 开发 Stripe 的 CLI 工具，</a> 用来帮助建立，测试和管理 Stripe integration 的命令行权限 。</p>
+            </li>
+
+            <li class="MediaList-itemBox">
+                <div class="MediaList-itemBoxHeader-top">
+                    <img class="MediaList-itemBoxImage" src="/static/imgs/logos/netflix.svg" alt="Netflix Logo">
+                    <p class="MediaList-itemBoxTitle"></p>
+                </div>
+                <p class="MediaList-itemBoxBody-top">Netflix 使用 Go 来构建 CLI 应用 <a href="https://medium.com/netflix-techblog/application-data-caching-using-ssds-5bf25df851ef" rel="noreferrer" target="_blank">ChaosMonkey</a>，负责在生产环境中随机终止实例的应用程序，以确保工程师实现其服务对实例故障具有弹性。</p>
+            </li>
+
+            <li class="MediaList-itemBox">
+                <div class="MediaList-itemBoxHeader-top">
+                    <a href="https://mongodb.com" target="_blank"><img class="MediaList-itemBoxImage" src="/static/imgs/logos/mongodb.svg" alt="MongoDB Logo"></a>
+                    <p class="MediaList-itemBoxTitle"></p>
+                </div>
+                <p class="MediaList-itemBoxBody-top">MongoDB <a href="https://www.mongodb.com/blog/post/go-agent-go" rel="noreferrer" target="_blank">使用 Go 实现了他们的后端 CLI 工具</a>，因为 Go 的众多优点：类 C 语法，强大的标准库，可以通过 goroutines 解决的并发场景，和无痛的多平台发布。</p>
+            </li>
+
+            <li class="MediaList-itemBox">
+                <div class="MediaList-itemBoxHeader-top">
+                    <a href="https://kubernetes.com" target="_blank"><img class="MediaList-itemBoxImage" src="/static/imgs/logos/kubernetes.svg" alt="Kubernetes Logo"></a>
+                    <p class="MediaList-itemBoxTitle"></p>
+                </div>
+                <p class="MediaList-itemBoxBody-top">Kubernetes 是最受欢迎的用 Go 写的 CLI 应用之一。 <a href="https://blog.gopheracademy.com/birthday-bash-2014/kubernetes-go-crazy-delicious/" rel="noreferrer" target="_blank">Kubernetes 的创造者，Joe Beda, 说对于 Kubernetes</a>, &ldquo;Go 是唯一的最佳选择&rdquo;。可以说在低级语言（像 C++）和高级语言（像 Python）之间选择，Go 是最佳的。</p>
+            </li>
+
+            <li class="MediaList-itemBox">
+                <div class="MediaList-itemBoxHeader-top">
+                    <a href="https://gohugo.io" target="_blank"><img class="MediaList-itemBoxImage" src="/static/imgs/logos/hugo.svg" alt="Hugo Logo"></a>
+                    <p class="MediaList-itemBoxTitle"></p>
+                </div>
+                <p class="MediaList-itemBoxBody-top">Hugo 是支持数千站点的最流行的 Go CLI 应用程序之一。 它受欢迎的一个原因就是 Go 的易于安装。 Hugo 作者 <a href="https://gohugo.io/news/lets-celebrate-hugos-5th-birthday/" rel="noreferrer" target="_blank">Bjørn Erik Pedersen 写到</a> &ldquo;单一的二进制文件解决了安装和升级的大部分问题。&rdquo;</p>
+            </li>
+
+
+
+        </ul>
+
+        <h2 id="how-to-use-go-for-clis">如何使用 Go 开发 CLIs 应用程序</h2>
+
+        <p>在使用 Go 开发 CLIs 时，有两种工具被广泛使用：Cobra &amp; Viper 。</p>
+
+        <div class="PullQuote">
+            <div class="PullQuote-quoteHeader">
+                <img class="PullQuote-image" src="/static/imgs/quote.svg" alt="Quotation mark.">
+            </div>
+            <p class="PullQuote-body">
+                我的任务是构建我们的 CLI 工具，并发现了两个非常棒的项目，Cobra 和 Viper ，它们让开发 CLI 更容易。就个人而言，他们非常强大，非常灵活，非常擅长做这些事情。并且他们都能帮助你展示你的下一个 CLI 应用程序。
+            </p>
+            <div class="PullQuote-author">
+                <a href="https://medium.com/@skdomino/writing-better-clis-one-snake-at-a-time-d22e50e60056" target="_blank">&mdash; Steve Domino, 斯特拉拉高级工程师和设计师</a></div>
+        </div>
+
+        <p>
+            <a href="https://pkg.go.dev/github.com/spf13/cobra?tab=overview">Cobra</a> 既是一个创建强大的现代的 CLI 应用程序的库，也是一个使用 Go 生成普通应用程序和 CLI 应用程序的程序。Cobra 支持大多数流行的 Go 应用程序，包括 CoreOS， Delve， Docker， Dropbox， Git Lfs， Hugo， Kubernetes， 以及 <a href="https://pkg.go.dev/github.com/spf13/cobra?tab=importedby" rel="noreferrer" target="_blank">其他更多</a>. 使用集成的命令帮助，自动完成和文档 “这使得记录每个命令都变得非常简单，” <a href="https://blog.alexellis.io/5-keys-to-a-killer-go-cli/" rel="noreferrer" target="_blank">Alex Ellis</a> 说到， OpenFaaS 的创始人。
+        </p>
+        <div class="PullQuote">
+            <div class="PullQuote-quoteHeader">
+                <img class="PullQuote-image" src="/static/imgs/quote.svg" alt="Quotation mark.">
+            </div>
+            <p class="PullQuote-body">
+                Cobra 是一个编写小型甚至大型工具的好产品。它更像是一个框架而不是一个库，因为当你调用库的时候会创建一个框架，然后在中间添加代码。&rdquo;
+            </p>
+            <div class="PullQuote-author">
+                <a href="https://www.youtube.com/watch?v=WvWPGVKLvR4" target="_blank">&mdash; Francesc Campoy， DGraph 实验室产品 VP 兼 "Just For Func" 视频制作人</a></div>
+        </div>
+
+        <p>
+            <img class="LargeMedia-image Right" alt="Go gopher" src="/static/imgs/gophers/peach.svg">
+            <a href="https://pkg.go.dev/github.com/spf13/viper?tab=overview">Viper</a> 是一个完整的配置解决方案的 Go 应用程序。它是为了 App 中能方便处理格式化的配置需求而设计的。 Cobra 和 Viper 配合使用最佳。
+        </p>
+
+        <p>Viper <a href="https://scene-si.org/2017/04/20/managing-configuration-with-viper/" rel="noreferrer" target="_blank">支持配置文件中的嵌套结构</a>，对于一个大型的应用程序，允许 CLI 开发者通过不同配置文件来管理。 Viper 还提供了构建 "12-Factor" 应用所需的所有工具。</p>
+
+        <p>&ldquo;如果你不想污染你的命令行工具，或者你正在处理敏感数据，不希望在历史记录中显示这些数据，使用环境变量来控制是一个好方法。对此，你可以使用 Viper，&rdquo; <a href="https://ordina-jworks.github.io/development/2018/10/20/make-your-own-cli-with-golang-and-cobra.html" rel="noreferrer" target="_blank">建议 Geudens</a>。</p>
+
+        <h2 id="key-solutions">典型的解决方案</h2>
+
+        <h3 id="go-books-for-creating-clis">关于 CLIs 的 Go 语言书籍</h3>
+
+        <ul class="Learn-tileList">
+
+            <li class="Learn-tile">
+                <a href="https://www.amazon.com/Powerful-Command-Line-Applications-Go-Maintainable/dp/168050696X">
+                    <div class="Learn-tileThumbnail Learn-tileThumbnail--book">
+                        <img alt="Powerful Command-Line Applications in Go thumbnail." src="/static/imgs/books/powerful-command-line-applications-in-go.jpg">
+                    </div>
+                    <p class="Learn-tileTitle">
+                        Powerful Command-Line Applications in Go
+                    </p>
+                </a>
+            </li>
+
+            <li class="Learn-tile">
+                <a href="https://www.amazon.com/Go-Action-William-Kennedy/dp/1617291781">
+                    <div class="Learn-tileThumbnail Learn-tileThumbnail--book">
+                        <img alt="Go in Action thumbnail." src="/static/imgs/books/go-in-action.jpg">
+                    </div>
+                    <p class="Learn-tileTitle">
+                        Go in Action
+                    </p>
+                </a>
+            </li>
+
+            <li class="Learn-tile">
+                <a href="https://www.gopl.io/">
+                    <div class="Learn-tileThumbnail Learn-tileThumbnail--book">
+                        <img alt="The Go Programming Language thumbnail." src="/static/imgs/books/go-programming-language-book.png">
+                    </div>
+                    <p class="Learn-tileTitle">
+                        The Go Programming Language
+                    </p>
+                </a>
+            </li>
+
+            <li class="Learn-tile">
+                <a href="https://github.com/matryer/goblueprints">
+                    <div class="Learn-tileThumbnail Learn-tileThumbnail--book">
+                        <img alt="Go Programming Blueprints thumbnail." src="/static/imgs/books/go-programming-blueprints.png">
+                    </div>
+                    <p class="Learn-tileTitle">
+                        Go Programming Blueprints
+                    </p>
+                </a>
+            </li>
+
+        </ul>
+
+        <div class="headerWithLink">
+            <h3>关于 CLI 的一些库</h3>
+                <p class="headerLink"><a href="https://pkg.go.dev/search?q=command%20line%20OR%20CLI">更多 &gt;</a></p>
+        </div>
+
+        <ul>
+            <li>
+                <a href="https://pkg.go.dev/github.com/spf13/cobra?tab=overview">spf13/cobra</a>，一个用于创建强大的现代 CLI 应用程序的库，并且可以用来生成普通的 Go 程序和 CLI 程序</li>
+            <li>
+                <a href="https://pkg.go.dev/github.com/spf13/viper?tab=overview">spf13/viper</a>，一个完整的 Go 应用程序的配置解决方案，它是为了 App 中能方便处理格式化的配置需求而设计的</li>
+            <li>
+                <a href="https://pkg.go.dev/github.com/urfave/cli?tab=overview">urfave/cli</a>，一个轻量级的框架，用来创建和开发 Go 的命令行程序</li>
+            <li>
+                <a href="https://pkg.go.dev/github.com/go-delve/delve?tab=overview">delve</a>，一个轻量级且强大的工具，为习惯于在编译语言中使用源代码级调试器的程序员而构建</li>
+            <li>
+                <a href="https://pkg.go.dev/github.com/chzyer/readline?tab=overview">chzyer/readline</a>，完全使用 Golang 实现，提供了 GNU Readline 中的大部分功能 (遵守 MIT license)</li>
+            <li>
+                <a href="https://pkg.go.dev/github.com/dixonwille/wmenu?tab=overview">dixonwille/wmenu</a>，一个简单好用的菜单结构 CLI 应用程序，用来提示用户选择</li>
+            <li>
+                <a href="https://pkg.go.dev/github.com/spf13/pflag?tab=overview">spf13/pflag</a>，一个 "POSIX/GNU" 风格的 flag 包，可以完全替代 Go 的 flag 包</li>
+            <li>
+                <a href="https://pkg.go.dev/github.com/golang/glog?tab=overview">golang/glog</a>，为 Go 应用提供不同级别的日志记录 </li>
+        </ul>
+
+    </article>
+{{end}}
