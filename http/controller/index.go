@@ -16,6 +16,7 @@ import (
 
 type IndexController struct{}
 
+// RegisterRoutes 注册路由
 func (i IndexController) RegisterRoutes(e *echo.Echo) {
 	e.GET("/", i.index)
 	e.GET("/solutions", i.solution)
@@ -24,6 +25,7 @@ func (i IndexController) RegisterRoutes(e *echo.Echo) {
 	e.GET("/about", i.about)
 	e.GET("/solutions/webdev/", i.webdev)
 	e.GET("/solutions/cloud/", i.cloud)
+	e.GET("/solutions/:typ", i.solutionProxy)
 }
 
 // index 首页
@@ -54,6 +56,11 @@ func (i IndexController) about(ctx echo.Context) error {
 // solutions Go for Web Development Web 开发
 func (i IndexController) webdev(ctx echo.Context) error {
 	return Render(ctx, "solutions/webdev.html", map[string]interface{}{"solution_active": "Header-menuItem--active"})
+
+// solutionProxy  代理所有 solutions 子路由
+func (i IndexController) solutionProxy(ctx echo.Context) error {
+	typ := ctx.Param("typ")
+	return Render(ctx, "solutions/"+typ+".html", map[string]interface{}{"solution_active": "Header-menuItem--active"})
 }
 
 // solutions Go for Cloud & Network Services 云&网络服务
