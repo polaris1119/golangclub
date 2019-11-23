@@ -13,6 +13,9 @@ func main() {
 	e.Use(middleware.Recover())
 	e.Use(middleware.Logger())
 
+	// 去除尾部斜杠
+	e.Pre(middleware.RemoveTrailingSlash())
+
 	// 服务静态文件
 	e.Static("/static", "static")
 
