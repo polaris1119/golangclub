@@ -16,3 +16,7 @@
 tmp
 
 golangclub
+
+vendor
+.vscode
+.DS_Store

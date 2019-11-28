@@ -25,6 +25,7 @@ func (i IndexController) RegisterRoutes(e *echo.Echo) {
 	e.GET("/about", i.about)
 	e.GET("/solutions/webdev/", i.webdev)
 	e.GET("/solutions/cloud/", i.cloud)
+	e.GET("/solutions/clis/", i.solutionCLIs)
 	e.GET("/solutions/:typ", i.solutionProxy)
 }
 
@@ -56,6 +57,11 @@ func (i IndexController) about(ctx echo.Context) error {
 // solutions Go for Web Development Web 开发
 func (i IndexController) webdev(ctx echo.Context) error {
 	return Render(ctx, "solutions/webdev.html", map[string]interface{}{"solution_active": "Header-menuItem--active"})
+
+// Designed for today's needs : CLIs (Go for Command-line Interfaces)
+func (i IndexController) solutionCLIs(ctx echo.Context) error {
+	return Render(ctx, "solutions/clis.html", nil)
+}
 
 // solutionProxy  代理所有 solutions 子路由
 func (i IndexController) solutionProxy(ctx echo.Context) error {
