@@ -1,0 +1,248 @@
+{{define "title"}}Go Web 开发 - golangclub.com{{end}}
+{{define "content"}}
+<main class="Site-content"></main>
+    <article class="Article Article--solutions">
+            <h1>云计算网络服务</h1>
+
+            <h2 id="go-helps-enterprises-build-and-scale-cloud-computing-systems">Go 帮助企业构建与扩展云计算系统</h2>
+            
+            <p>随着应用程序与处理逻辑转移到云端，并发成为一大问题。云计算系统天然地共享与扩展资源，但其同步访问共享资源可能会存在问题，因为它会影响每一个在云端处理的应用程序，此时『<a href="https://tomassetti.me/best-programming-languages/" rel="noreferrer" target="_blank">专注于开发高可靠与并发的应用程序</a>』的编程语言则成为一大需求。</p>
+            
+            <p>Go 语言的出现正是为了完全满足这些规模化应用程序、微服务和云开发的并发需求。实际上，<strong>云原生计算基金会（<a href="https://www.cncf.io/projects/" rel="noreferrer" target="_blank">CNCF</a>）有超过75%的项目是由 Go 语言编写的</strong>。</p>
+            
+            <div class="PullQuote">
+              <div class="PullQuote-quoteHeader">
+                <img class="PullQuote-image" src="/static/imgs/quote.svg" alt="Quotation mark.">
+              </div>
+              <p class="PullQuote-body">
+                    作为一家公司，使用 Go 语言开发业务很容易规模化，这一点非常重要，因为随着工程团队不断壮大，每个服务都可以由不同的单元来管理。
+              </p>
+              <div class="PullQuote-author">
+                <a href="https://builtin.com/software-engineering-perspectives/golang-advantages" target="_blank">&mdash; Ruchi Malik，Choozle 工程师</a></div>
+              </div>
+            
+            
+            <p>服务开发者经常需要在开发周期时间与服务器性能之间权衡利弊。而 Go 语言有助于减少这种权衡的必要，因为 Go 的快速构建使得迭代开发成为可能，并且它可以降低内存和 CPU 占用率。使用 Go 构建的服务器程序可以快速启动，并且在按需付费和无服务器部署中运行成本很低。</p>
+            
+            <p>Go 解决了开发人员在现代云场景中的诸多挑战：提供了标准化的惯用API，并内置了并发充分利用了多核特性。Go 的低延时和『no knob』调优特性使得 Go 在性能与产出之间取得了一个很好的平衡：将选择的权利交给工程师团队。</p>
+            
+            <h2 id="featured-go-users-projects">Go 用户 &amp; 项目精选</h2>
+            
+            <ul class="MediaList">
+              
+                <li class="MediaList-itemBox">
+              <div class="MediaList-itemBoxHeader-top">
+                <img class="MediaList-itemBoxImage" src="/static/imgs/logos/google-cloud.svg" alt="Google Cloud Logo">
+                <p class="MediaList-itemBoxTitle"></p>
+              </div>
+              <p class="MediaList-itemBoxBody-top">Google Cloud 内置了 Go。在 Google Cloud 中，横跨整个行业的许多关键的云项目如 <a href="https://kubernetes.io/" rel="noreferrer" target="_blank">Kubernetes</a>，<a href="https://istio.io/" rel="noreferrer" target="_blank">Istio</a> 和 <a href="https://gvisor.dev/" rel="noreferrer" target="_blank">gVisor</a> 均由 Go 编写。<a href="https://cloud.google.com" rel="noreferrer" target="_blank">Google Cloud</a> 上所有的 API 和运行时都完全支持 Go，包括无服务器 <a href="https://cloud.google.com/appengine/" rel="noreferrer" target="_blank">App Engine</a>, <a href="https://cloud.google.com/knative/" rel="noreferrer" target="_blank">Knative</a>，<a href="https://cloud.google.com/run/" rel="noreferrer" target="_blank">Cloud Run</a>，和 <a href="https://cloud.google.com/functions/" rel="noreferrer" target="_blank">Google Cloud Functions</a>。</p>
+            </li>
+            
+                <li class="MediaList-itemBox">
+              <div class="MediaList-itemBoxHeader-top">
+                <img class="MediaList-itemBoxImage" src="/static/imgs/logos/capital-one.svg" alt="Capital One Logo">
+                <p class="MediaList-itemBoxTitle"></p>
+              </div>
+              <p class="MediaList-itemBoxBody-top">Capital One 使用 Go 增强了 <a href="https://medium.com/capital-one-tech/a-serverless-and-go-journey-credit-offers-api-74ef1f9fde7f" rel="noreferrer" target="_blank">Credit Offers API，一项关键服务</a>。 该公司工程师团队也用 Go 构建了他们的无服务架构，正如他们所言：如果没有 Go 可能他们都不会涉及无服务。</p>
+            </li>
+            
+                <li class="MediaList-itemBox">
+              <div class="MediaList-itemBoxHeader-top">
+                <img class="MediaList-itemBoxImage" src="/static/imgs/logos/dropbox.svg" alt="Dropbox Logo">
+                <p class="MediaList-itemBoxTitle"></p>
+              </div>
+              <p class="MediaList-itemBoxBody-top">Dropbox 之前由 Python 构建，<a href="https://blogs.dropbox.com/tech/2014/07/open-sourcing-our-go-libraries/" rel="noreferrer" target="_blank">但是在2013年决定</a> 将影响性能的模块迁移到 Go 上。今天公司的大部分基础设施是采用 Go 来构建。目前 GitHub 上有一些 <a href="https://github.com/dropbox/godropbox" rel="noreferrer" target="_blank">Dropbox 的开源库</a>。</p>
+            </li>
+            
+                <li class="MediaList-itemBox">
+              <div class="MediaList-itemBoxHeader-top">
+                <img class="MediaList-itemBoxImage" src="/static/imgs/logos/mercadoLibre.svg" alt="MercadoLibre Logo">
+                <p class="MediaList-itemBoxTitle"></p>
+              </div>
+              <p class="MediaList-itemBoxBody-top">MercadoLibre 使用 Go <a href="/solutions/mercadolibre">扩展了他们的电商平台</a>。随着 Mercadolibre 在线电商的发展，Go 产出高效代码可以随时根据业务进行扩展。Go 在简化和扩展 MercadoLibre 服务的同时提高了生产力。</p>
+            </li>
+            
+                <li class="MediaList-itemBox">
+              <div class="MediaList-itemBoxHeader-top">
+                <img class="MediaList-itemBoxImage" src="/static/imgs/logos/twitch.svg" alt="Twitch Logo">
+                <p class="MediaList-itemBoxTitle"></p>
+              </div>
+              <p class="MediaList-itemBoxBody-top">Twitch <a href="https://blog.twitch.tv/en/2016/07/05/gos-march-to-low-latency-gc-a6fa96f06eb7/" rel="noreferrer" target="_blank">使用 Go 增强它负载最高的系统</a> ，该系统服务了在线视频和聊天应用数百万的用户。</p>
+            </li>
+            
+                <li class="MediaList-itemBox">
+              <div class="MediaList-itemBoxHeader-top">
+                <img class="MediaList-itemBoxImage" src="/static/imgs/logos/the-new-york-times-icon.svg" alt="The New York Times Logo">
+                <p class="MediaList-itemBoxTitle"></p>
+              </div>
+              <p class="MediaList-itemBoxBody-top">纽约时报采用 Go <a href="https://open.nytimes.com/introducing-gizmo-aa7ea463b208" rel="noreferrer" target="_blank">『构建了很好的后端服务』</a>。随着 Go 在公司的进一步推广使用，他们认为他们需要创建一个工具箱，去帮助开发者快速配置、构建微服务 APIs 和 发布/订阅（pubsub）守护程序，并且他们已经<a href="https://github.com/nytimes/gizmo" rel="noreferrer" target="_blank">开源</a>。</p>
+            </li>
+            
+                <li class="MediaList-itemBox">
+              <div class="MediaList-itemBoxHeader-top">
+                <img class="MediaList-itemBoxImage" src="/static/imgs/logos/uber-app-icon.svg" alt="Uber Logo">
+                <p class="MediaList-itemBoxTitle"></p>
+              </div>
+              <p class="MediaList-itemBoxBody-top">Uber 使用 Go 增加了几个关键服务，该服务影响者全世界范围的数百万司机与乘客。从他们的<a href="https://eng.uber.com/aresdb/" rel="noreferrer" target="_blank">实时分析引擎</a>（AresDB）到他们的<a href="https://eng.uber.com/go-geofence/" rel="noreferrer" target="_blank">查询地理位置的微服务</a>（Geofence）以及<a href="https://eng.uber.com/open-sourcing-peloton/" rel="noreferrer" target="_blank">他们的资源调度器</a>都是用 Go 来实现的。</p>
+            </li>
+            
+            
+            </ul>
+            
+            <h2 id="how-to-use-go-for-cloud-computing">云计算如何使用 Go </h2> 
+            
+            <p>Go 在构建服务方面的优势很明显。它的速度和内置支持并发可以构建快速高效的服务。而静态类型，强大的工具以及对简单性和可读性的侧重有助于构建可靠且可维护的代码。</p>
+            
+            <p>Go 拥有一个强大的生态来支持服务开发。<a href="https://golang.org/pkg/" rel="noreferrer" target="_blank">标准库</a>包括许多满足常见需求的程序包，比如 HTTP 服务器和客户端，JSON/XML 解析，SQL 数据库以及一系列安全性/加密功能，同时 Go 运行时则包括：用于<a href="https://golang.org/doc/articles/race_detector.html" rel="noreferrer" target="_blank">竞争检测</a>，<a href="https://golang.org/pkg/testing/#hdr-Benchmarks" rel="noreferrer" target="_blank">基准测试</a>/性能分析，代码生成和静态代码分析的工具。</p>
+            
+            <p>主流的云服务供应商（<a href="https://cloud.google.com/go/home" rel="noreferrer" target="_blank">GCP</a>, <a href="https://aws.amazon.com/sdk-for-go/" rel="noreferrer" target="_blank">AWS</a>, <a href="https://docs.microsoft.com/en-us/azure/go/" rel="noreferrer" target="_blank">Azure</a>）提供了相应服务的 Go APIs，流行的开源库提供对API工具的支持（<a href="https://github.com/go-swagger/go-swagger" rel="noreferrer" target="_blank">Swagger</a>），传输（<a href="https://github.com/golang/protobuf" rel="noreferrer" target="_blank">protocol buffers</a>, <a href="https://grpc.io/docs/quickstart/go/" rel="noreferrer" target="_blank">gRPC</a>），监控（<a href="https://godoc.org/go.opencensus.io" rel="noreferrer" target="_blank">OpenCensus</a>），对象关系映射（<a href="https://gorm.io/" rel="noreferrer" target="_blank">gORM</a>），身份验证（<a href="https://github.com/dgrijalva/jwt-go" rel="noreferrer" target="_blank">JWT</a>）。 开源社区还提供了多个服务框架，包括 <a href="https://gokit.io/[" rel="noreferrer" target="_blank">Go Kit</a>，<a href="https://micro.mu/docs/go-micro.html" rel="noreferrer" target="_blank">Go Micro</a> 和 <a href="https://github.com/nytimes/gizmo" rel="noreferrer" target="_blank">Gizmo</a>，这是快速入门的好方法。</p>
+            
+            <p>两种流行的用于云计算的 Go 工具是 <a href="https://docker.com" rel="noreferrer" target="_blank">Docker</a> 和 <a href="https://kubernetes.io" rel="noreferrer" target="_blank">Kubernetes</a>：</p>
+            
+            <p><strong>Docker 是一种平台即服务（PAAS），可在容器中交付软件。</strong>容器中的 <a href="https://www.docker.com/" rel="noreferrer" target="_blank">Docker Engine</a> 负责打包软件、库、配置文件，它是由单个操作系统内核运行（比虚拟机使用更少的系统资源）。</p>
+            
+            <p>云开发者使用 Docker 管理他们的 Go 代码，支持多个平台，除此之外，Docker 也支持开发工作流和部署过程。Tiny Shell Script 创始人，<a href="https://www.docker.com/blog/docker-golang/" rel="noreferrer" target="_blank"> Jérôme Petazzoni</a> 写到『Docker 可以帮助我们在一个干净、隔离的环境下编译 Go 代码，且可以在不同的操作系统和平台之间交叉编译。』</p>
+            
+            <p><strong>Kubernetes 是一个用 Go 编写的开源的容器编排系统，可用于自动化 web 应用程序部署。</strong> Web 应用程序经常使用容器（正如上文提到的）打包他们的依赖与配置。Kubernetes 有助于大规模部署和管理这些容器。云程序员使用 Kubernetes 快速构建、交付和规模化容器化的应用程序，通过使用控制容器运行的 APIs 管理日益增长的复杂性。</p>
+            
+            <h2 id="key-solutions">关键解决方案</h2>
+            
+            <h3 id="go-books-for-cloud-computing">Go 云计算书籍</h3>
+            
+            <ul class="Learn-tileList">
+                
+                <li class="Learn-tile">
+                    <a href="https://book.douban.com/subject/27105337/">
+                        <div class="Learn-tileThumbnail Learn-tileThumbnail--book">
+                            
+                            <img alt="Building Microservices with Go thumbnail." src="/static/imgs/books/building-microservices-with-go.jpg">
+                            
+                        </div>
+                        <p class="Learn-tileTitle">
+                            Building Microservices with Go
+                        </p>
+                    </a>
+                </li>
+                
+                <li class="Learn-tile">
+                    <a href="https://book.douban.com/subject/30455214/">
+                        <div class="Learn-tileThumbnail Learn-tileThumbnail--book">
+                            
+                            <img alt="Hands-On Software Architecture with Golang thumbnail." src="/static/imgs/books/hands-on-software-architecture-with-golang.jpg">
+                            
+                        </div>
+                        <p class="Learn-tileTitle">
+                            Hands-On Software Architecture with Golang
+                        </p>
+                    </a>
+                </li>
+                
+                <li class="Learn-tile">
+                    <a href="https://book.douban.com/subject/30154905/">
+                        <div class="Learn-tileThumbnail Learn-tileThumbnail--book">
+                            
+                            <img alt="Building RESTful Web services with Go thumbnail." src="/static/imgs/books/building-restful-web-services-with-go.jpg">
+                            
+                        </div>
+                        <p class="Learn-tileTitle">
+                            Building RESTful Web services with Go
+                        </p>
+                    </a>
+                </li>
+                
+                <li class="Learn-tile">
+                    <a href="https://book.douban.com/subject/26630921/">
+                        <div class="Learn-tileThumbnail Learn-tileThumbnail--book">
+                            
+                            <img alt="Mastering Go Web Services thumbnail." src="/static/imgs/books/mastering-go-web-services.jpg">
+                            
+                        </div>
+                        <p class="Learn-tileTitle">
+                            Mastering Go Web Services
+                        </p>
+                    </a>
+                </li>
+                
+                <li class="Learn-tile">
+                    <a href="">
+                        <div class="Learn-tileThumbnail Learn-tileThumbnail--book">
+                            
+                        </div>
+                        <p class="Learn-tileTitle">
+                            
+                        </p>
+                    </a>
+                </li>
+                
+            </ul>
+            
+            <div class="headerWithLink">
+                <h3>服务框架</h2>
+                <p class="headerLink"><a href="https://pkg.go.dev/search?q=service%20framework">更多 &gt;</a></p>
+            </div>
+            
+            <ul>
+            <li>
+            <a href="https://pkg.go.dev/github.com/go-kit/kit?tab=overview">go-kit</a>，一个 Go 实现的用于构建微服务的编程工具集</li>
+            <li>
+            <a href="https://pkg.go.dev/github.com/micro/go-micro?tab=overview">go-micro</a>，微服务开发框架</li>
+            <li>
+            <a href="https://pkg.go.dev/github.com/nytimes/gizmo?tab=overview">nytimes/gizmo</a>，纽约时报开源的微服务框架</li>
+            <li>
+            <a href="https://pkg.go.dev/go.uber.org/yarpc?tab=overview">go.uber.org/yarpc</a>，Uber 的微服务框架</li>
+            </ul>
+            
+            <div class="headerWithLink">
+                <h3>云客户端库</h2>
+                <p class="headerLink"><a href="https://pkg.go.dev/search?q=cloud%20client%20OR%20cloud%20SDK">更多 &gt;</a></p>
+            </div>
+            
+            <ul>
+            <li>
+            <a href="https://pkg.go.dev/cloud.google.com/go?tab=overview">cloud.google.com/go</a>，Google Cloud 的 Go 客户端库</li>
+            <li>
+            <a href="https://pkg.go.dev/github.com/aws/aws-sdk-go/aws/client?tab=overview">aws/client</a>，Go 版本的 AWS SDK</li>
+            <li>
+            <a href="https://pkg.go.dev/github.com/aliyun/alibaba-cloud-sdk-go/sdk?tab=overview">alibaba-cloud-sdk-go/sdk</a>，Go 版本的 Alibaba Cloud SDK</li>
+            <li>
+            <a href="https://pkg.go.dev/github.com/Azure/azure-sdk-for-go?tab=overview">Azure/azure-sdk-for-go</a>，Go 版本的 Azure SDK</li>
+            <li>
+            <a href="https://pkg.go.dev/github.com/IBM-Cloud/bluemix-go?tab=overview">IBM-Cloud/bluemix-go</a>，Go 版本的 IBM Cloud SDK</li>
+            <li>
+            <a href="https://pkg.go.dev/github.com/heroku/heroku-go/v5?tab=overview">heroku-go/v5</a>，Go 版本的 Heroku 客户端库</li>
+            </ul>
+            <div class="headerWithLink">
+                <h3>库</h2>
+                <p class="headerLink"><a href="https://pkg.go.dev/search?q=REST%20OR%20API%20OR%20web%20OR%20cloud">更多 &gt;</a></p>
+            </div>
+            
+            <ul>
+            <li>
+            <a href="https://pkg.go.dev/github.com/go-swagger/go-swagger?tab=overview">go-swagger</a>，简单且强大的 RESTFUL APIs 表示</li>
+            <li>
+            <a href="https://pkg.go.dev/github.com/emicklei/go-restful?tab=overview">emicklei/go-restful</a>，轻松创建 REST 风格的服务</li>
+            <li>
+            <a href="https://pkg.go.dev/github.com/golang/protobuf?tab=overview">golang/protobuf</a>，Google&rsquo;s protocol buffer 的 Go 版本</li>
+            <li>
+            <a href="https://pkg.go.dev/github.com/grpc/grpc-go?tab=overview">grpc-go</a>，高性能、开源的 RPC 框架</li>
+            <li>
+            <a href="https://pkg.go.dev/github.com/census-instrumentation/opencensus-go/blob/master/opencensus.go?tab=overview">master/opencensus.go</a>，一组用于收集应用程序指标和分布式跟踪的库</li>
+            <li>
+            <a href="https://pkg.go.dev/github.com/jinzhu/gorm?tab=overview">jinzhu/gorm</a>，Go 版本的 ORM 库</li>
+            <li>
+            <a href="https://pkg.go.dev/github.com/dgrijalva/jwt-go?tab=overview">dgrijalva/jwt-go</a>，JWT（Json Web Token）的 Go 版本实现</li>
+            <li>
+            <a href="https://pkg.go.dev/github.com/lileio/lile?tab=overview">lileio/lile</a>，快速创建 RPC 基础服务</li>
+            </ul>
+            
+            <h3 id="other-resources">其他资源</h3>
+            
+            <ul>
+            <li><a href="https://ewanvalentine.io/microservices-in-golang-part-1/" rel="noreferrer" target="_blank">Microservices in Golang</a> 基于 Go-micro 的微服务实践</li>
+            <li><a href="https://awesome-go.com/" rel="noreferrer" target="_blank">Awesome Go</a>、Go框架、库和软件的精选</li>
+            </ul>
+                
+    </article>
+</main>
+
+{{end}}
