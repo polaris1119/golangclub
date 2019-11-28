@@ -23,6 +23,8 @@ func (i IndexController) RegisterRoutes(e *echo.Echo) {
 	e.GET("/learn", i.learn)
 	e.GET("/gopher", i.gopher)
 	e.GET("/about", i.about)
+	e.GET("/solutions/clis/", i.solutionCLIs)
+	e.GET("/solutions/webdev/", i.webdev)
 	e.GET("/solutions/:typ", i.solutionProxy)
 }
 
@@ -49,6 +51,16 @@ func (i IndexController) gopher(ctx echo.Context) error {
 // about 关于
 func (i IndexController) about(ctx echo.Context) error {
 	return Render(ctx, "about.html", map[string]interface{}{"about_active": "Header-menuItem--active"})
+}
+
+// Designed for today's needs : CLIs (Go for Command-line Interfaces)
+func (i IndexController) solutionCLIs(ctx echo.Context) error {
+	return Render(ctx, "solutions/clis.html", nil)
+}
+
+// solutions Go for Web Development
+func (i IndexController) webdev(ctx echo.Context) error {
+	return Render(ctx, "solutions/webdev.html", map[string]interface{}{"solution_active": "Header-menuItem--active"})
 }
 
 // solutionProxy  代理所有 solutions 子路由
